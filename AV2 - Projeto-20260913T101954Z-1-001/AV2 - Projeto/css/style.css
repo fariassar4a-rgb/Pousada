@@ -1,0 +1,260 @@
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5efe3;
+    color: #263b36;
+    line-height: 1.6;
+}
+
+
+/* ===== NAVBAR ===== */
+
+header {
+    background-color: #173f46;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #d9b878;
+}
+
+
+/* ===== ÁREA INICIAL ===== */
+
+.inicio {
+    min-height: 85vh;
+
+    background-image: url("../imagens/ubatuba.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.inicio-conteudo {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+
+    padding: 45px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.inicio-conteudo h2 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.inicio-conteudo p {
+    font-size: 21px;
+    margin-bottom: 25px;
+}
+
+
+/* ===== BOTÃO ===== */
+
+.botao,
+#botao-contato {
+    background-color: #c79b52;
+    color: white;
+
+    border: none;
+    padding: 12px 22px;
+
+    border-radius: 8px;
+    cursor: pointer;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover,
+#botao-contato:hover {
+    background-color: #a77d3c;
+}
+
+
+/* ===== SEÇÕES ===== */
+
+.secao {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 30px;
+    text-align: center;
+}
+
+.secao h2 {
+    color: #173f46;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.secao > p {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+
+/* ===== CARDS ===== */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    margin-top: 40px;
+}
+
+.card {
+    background-color: white;
+
+    width: 310px;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #173f46;
+    margin: 18px 10px 10px;
+}
+
+.card p {
+    padding: 0 20px 10px;
+}
+
+
+/* ===== IMAGENS DOS QUARTOS ===== */
+
+.imagem-quarto {
+    width: 100%;
+    height: 200px;
+}
+
+.imagem-quarto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ===== TURISMO ===== */
+
+.turismo-cards {
+    margin-top: 30px;
+}
+
+.imagem-turismo {
+    width: 100%;
+    height: 200px;
+}
+
+.imagem-turismo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ===== CONTATO ===== */
+
+.contato {
+    background-color: #e4d4b5;
+    max-width: 100%;
+}
+
+#mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #173f46;
+}
+
+
+/* ===== RODAPÉ ===== */
+
+footer {
+    background-color: #173f46;
+    color: white;
+
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* ===== RESPONSIVIDADE ===== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .inicio-conteudo h2 {
+        font-size: 32px;
+    }
+
+    .inicio-conteudo p {
+        font-size: 18px;
+    }
+
+}
